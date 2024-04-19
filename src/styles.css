@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d1e7fa;
+}
+
+.container {
+    position: relative; /* Set container to relative positioning */
+    display: flex;
+    justify-content: center;
+}
+
+.white-keys {
+    display: flex; /* Ensure the white keys are displayed in a row */
+}
+
+.white-keys kbd {
+    width: 80px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: flex-end; /* Align content at the bottom */
+    align-items: center;
+}
+
+.black-keys {
+    position: absolute; /* Set black keys to absolute positioning */
+    top: 0; /* Position black keys relative to the top of the container */
+    display: flex;
+}
+
+.black-keys kbd {
+    width: 50px;
+    height: 120px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+}
+
+.white-keys kbd span {
+    left: -50px; /* Adjust the space between text and border */
+}
+
+.black-keys kbd:nth-child(1){
+    left: -225px; /* Position the second black key */
+}
+.black-keys kbd:nth-child(2){
+    left: -145px; /* Position the second black key */
+}
+
+.black-keys kbd:nth-child(3){
+    left: 15px; /* Position the third black key */
+}
+.black-keys kbd:nth-child(4){
+    left: 95px; /* Position the fourth black key */
+}
+.black-keys kbd:nth-child(5){
+    left: 175px; /* Position the fifth black key */
+ }

@@ -24,4 +24,4 @@ Feel free to contribute to this project by submitting pull requests or reporting
 
 ## Example
 
-Piano
+![Piano](media/piano.png)
